@@ -57,12 +57,12 @@ public class Registerpage extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.ret_to_front){
+        int iid = item.getItemId();
+        if (iid == R.id.ret_to_front){
             Intent intent = new Intent(Registerpage.this,Frontpage.class);
             startActivity(intent);
             return true;}
-        if (id == R.id.close_app){
+        if (iid == R.id.close_app){
             finishAffinity();
         }
         return super.onOptionsItemSelected(item);
